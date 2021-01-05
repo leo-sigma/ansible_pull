@@ -1,15 +1,19 @@
-# For this purpose, no need for inventory
-- hosts: localhost
-  # For local instead of SSH
-  connection: local
-  # To execute as root
-  become: true
+---
+- hosts: sigma
+  roles:
+    - base
+# # For this purpose, no need for inventory
+# - hosts: localhost
+#   # For local instead of SSH
+#   connection: local
+#   # To execute as root
+#   become: true
 
-  pre_tasks:
-    - name: update repositories
-      apt:
-        update_cache: yes
-      changed_when: False
+#   pre_tasks:
+#     - name: update repositories
+#       apt:
+#         update_cache: yes
+#       changed_when: False
 
   # tasks:
   #   - include: tasks/users.yml

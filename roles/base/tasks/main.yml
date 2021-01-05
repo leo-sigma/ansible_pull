@@ -1,0 +1,13 @@
+- name: testing role capacity
+  command: echo "THIS IS BEING PRINTED THROUGH THE BASE ROLE"
+
+- name: testing printing a variable from inventory
+  debug: var=test_var
+
+- name: uninstalling tmux
+  apt:
+    name:
+      - tmux
+    state: absent
+  
+  

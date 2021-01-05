@@ -1,3 +1,7 @@
+---
+- hosts: sigma
+  roles:
+    - base
 # # For this purpose, no need for inventory
 # - hosts: localhost
 #   # For local instead of SSH
@@ -5,14 +9,15 @@
 #   # To execute as root
 #   become: true
 
-- hosts: sigma
+# tasks:
+  # - name: Install packages
+  #   apt: 
+  #     name: 
+  #       - htop
+  #       - tmux
+  #     state: latest
 
-  tasks:
-  - name: Install packages
-    apt: 
-      name: 
-        - htop
-        - tmux
-      state: latest
+
+  
 
 
