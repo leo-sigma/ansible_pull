@@ -5,12 +5,12 @@
 #   # To execute as root
 #   become: true
 
-  tasks:
-    - name: Install packages
-      apt: 
-        name: 
-          - htop
-          - tmux
-        state: latest
+tasks:
+- name: Install packages
+  apt: 
+    name: 
+      - htop
+      - tmux
+    state: latest
 
 
