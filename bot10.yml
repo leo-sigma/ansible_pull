@@ -2,6 +2,7 @@
 - hosts: sigma
   roles:
     - base
+    - extra
 # # For this purpose, no need for inventory
 # - hosts: localhost
 #   # For local instead of SSH
