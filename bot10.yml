@@ -1,9 +1,9 @@
-# For this purpose, no need for inventory
-- hosts: localhost
-  # For local instead of SSH
-  connection: local
-  # To execute as root
-  become: true
+# # For this purpose, no need for inventory
+# - hosts: localhost
+#   # For local instead of SSH
+#   connection: local
+#   # To execute as root
+#   become: true
 
   tasks:
     - name: Install packages
